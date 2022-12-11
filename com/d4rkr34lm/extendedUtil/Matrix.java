@@ -68,4 +68,15 @@ public class Matrix{
     public int[][] getValues(){
         return values;
     }
+
+    @Override
+    public String toString() {
+        String ret = "";
+        for(int[] row : values){
+            for(int value : row)
+                ret += value + ", ";
+            ret += "\n";
+        }
+        return ret;
+    }
 }
